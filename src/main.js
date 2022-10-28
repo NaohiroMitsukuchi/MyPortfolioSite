@@ -2,7 +2,7 @@
 const worksArray = {
   teaoclock: {
     name: "Tea o'clock",
-    imges_number: 5,
+    images_number: 5,
     discription: "aaahogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
     dev_env: "ruby Rails",
     production_url: "http://18.176.36.229/",
@@ -11,7 +11,7 @@ const worksArray = {
   
   teaoclocker: {
     name: "Tea o'clocker",
-    imges_number: 5,
+    images_number: 5,
     discription: "111hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
     dev_env: "ruby Rails",
     production_url: "#",
@@ -19,7 +19,7 @@ const worksArray = {
   },
   teaoclockist: {
     name: "Tea o'clockist",
-    imges_number: 5,
+    images_number: 5,
     discription: "222hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
     dev_env: "ruby Rails",
     production_url: "#",
@@ -50,16 +50,21 @@ function work_discription_build(name, discription, dev_env, production, github){
 }
 
 // モーダル内に画像を配置する関数
-function work_images_build(workId, imges_number){
+function work_images_build(workId, images_number){
   let exibit_img_element = document.createElement('img');
   exibit_img_element.src = `img/works/${workId}/${workId}1.png`;
   exibit_img_element.id = 'exibit_image';
   exibit_image.append(exibit_img_element);
-  for(let i = 0; i < imges_number; i++){
+  for(let i = 0; i < images_number; i++){
     let img_element = document.createElement('img');
     img_element.src = `img/works/${workId}/${workId}${i+1}.png`;
     img_element.className = 'mini_image';
+    img_element.setAttribute('data-index',`${i+1}`)
     work_images.append(img_element);
+    // モーダル内の画像クリックでメイン画像入れ替え機能
+    img_element.addEventListener('click', function(){
+      exibit_img_element.src = `img/works/${workId}/${workId}${i+1}.png`
+    })
   }
 }
 
@@ -72,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function(){
       let workId = btnOpen[i].getAttribute('id');
       let workArray = worksArray[workId];
       work_discription_build(workArray.name, workArray.discription, workArray.dev_env, workArray.production_url, workArray.github_url);
-      work_images_build(workId, workArray.imges_number);
+      work_images_build(workId, workArray.images_number);
       modalOpen();
     })
   }
@@ -99,9 +104,3 @@ function outsideClose(e){
 // モーダルを閉じる挙動
 btnClose.addEventListener('click', modalClose);
 addEventListener('click', outsideClose);
-
-
-// // モーダルウィンドウ内の画像入れ替え機能
-//   function changeImage(){
-    
-//   }
