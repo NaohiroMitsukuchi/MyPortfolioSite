@@ -139,24 +139,24 @@ main .works_box .works_wrapper .works_contents {
   flex-wrap: wrap;
 }
 
-main .works_box .works_wrapper .works_contents .content {
+main .works_box .works_wrapper .works_contents .work_content {
   margin: 10px 25px;
 }
 
-main .works_box .works_wrapper .works_contents .content .work_img {
+main .works_box .works_wrapper .works_contents .work_content .work_img {
   width: 320px;
   height: 200px;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
 
-main .works_box .works_wrapper .works_contents .content .work_img:hover {
+main .works_box .works_wrapper .works_contents .work_content .work_img:hover {
   width: calc(320px * 1.04);
   height: calc(200px * 1.04);
   opacity: 0.8;
 }
 
-main .works_box .works_wrapper .works_contents .content .work_title {
+main .works_box .works_wrapper .works_contents .work_content .work_title {
   text-align: center;
   font-size: 17px;
   margin-top: 10px;
@@ -185,6 +185,7 @@ main .profile_box {
 }
 
 .modal_layer {
+  display: none;
   position: fixed;
   z-index: 20;
   left: 0;

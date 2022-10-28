@@ -113,7 +113,7 @@ main{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        .content{
+        .work_content{
           margin: 10px 25px;
           .work_img{
             width: 320px;
@@ -148,7 +148,7 @@ main{
 }
 
 .modal_layer{
-  // display: none;
+  display: none;
   position: fixed;
   z-index: 20;
   left: 0;
