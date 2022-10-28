@@ -14,16 +14,16 @@ const worksArray = {
     images_number: 5,
     discription: "111hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
     dev_env: "ruby Rails",
-    production_url: "#",
-    github_url: "#"
+    production_url: null,
+    github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
   },
   teaoclockist: {
     name: "Tea o'clockist",
     images_number: 5,
     discription: "222hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
     dev_env: "ruby Rails",
-    production_url: "#",
-    github_url: "#"
+    production_url: null,
+    github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
   }
 }
 
@@ -45,7 +45,11 @@ function work_discription_build(name, discription, dev_env, production, github){
   work_discription.children[0].innerHTML = name
   work_discription.children[1].innerHTML = discription
   work_discription.children[3].innerHTML = dev_env
-  production_url.setAttribute('href', `${production}`)
+  if(production == null){
+    production_url.style.display = 'none';
+  }else{
+    production_url.setAttribute('href', `${production}`)
+  }
   github_url.setAttribute('href', `${github}`)
 }
 
@@ -92,11 +96,13 @@ function rmvElement(){
 // モーダルウィンドウを閉じる関数
 function modalClose(){
   modal.style.display = 'none';
+  production_url.style.display = "flex";
   rmvElement();
 }
 function outsideClose(e){
   if(e.target == modal){
     modalClose();
+    production_url.style.display = "flex";
     rmvElement();
   }
 }
