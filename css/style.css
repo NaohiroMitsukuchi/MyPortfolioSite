@@ -199,6 +199,15 @@ main .skills_box {
   padding: 20px 0 70px;
 }
 
+main .skills_box .skills_wrapper {
+  width: 50%;
+}
+
+main .skills_box .skills_wrapper img {
+  display: block;
+  width: 100%;
+}
+
 main .profile_box {
   width: 100vw;
   height: 100%;

@@ -162,6 +162,13 @@ main{
 
   .skills_box{
     @include base_design(#d4e6c5, 100%);
+    .skills_wrapper{
+      width: 50%;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
   .profile_box{
