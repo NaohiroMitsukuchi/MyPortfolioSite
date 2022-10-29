@@ -9,7 +9,7 @@ p {
 
 h1 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-size: 60px;
 }
 
@@ -86,7 +86,30 @@ main .welcome_box {
   align-items: center;
   padding: 20px 0 70px;
   height: calc(100vh - 70px);
-  color: ivory;
+  background-size: contain;
+}
+
+main .welcome_box .welcome_contents {
+  position: relative;
+  width: 600px;
+  border-radius: 50%;
+  color: #ad6103;
+  background-image: url("../img/background/wood.jpg");
+}
+
+main .welcome_box .welcome_contents h2 {
+  margin-bottom: 40px;
+}
+
+main .welcome_box .welcome_contents::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  content: '';
+  border: 4px dotted #ad6103;
+  border-radius: 50%;
 }
 
 main .about_me_box {
