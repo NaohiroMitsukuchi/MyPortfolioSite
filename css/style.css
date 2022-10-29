@@ -86,7 +86,10 @@ main .welcome_box {
   align-items: center;
   padding: 20px 0 70px;
   height: calc(100vh - 70px);
-  background-size: contain;
+  background-image: url("../img/background/autumn.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 main .welcome_box .welcome_contents {
