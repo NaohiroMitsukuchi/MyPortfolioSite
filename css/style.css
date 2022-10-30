@@ -219,6 +219,33 @@ main .profile_box {
   color: ivory;
 }
 
+main .profile_box .profile_wrapper {
+  overflow-x: scroll;
+}
+
+main .profile_box .profile_contents {
+  border-bottom: 5px ivory solid;
+  background-color: #3e5e26;
+  display: flex;
+  justify-content: space-evenly;
+  width: 5000px;
+  padding-bottom: 50px;
+}
+
+main .profile_box .profile_contents .profile_content {
+  width: 200px;
+}
+
+main .profile_box .profile_contents .profile_content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+main .profile_box .profile_contents .profile_content .profile_discroption {
+  width: 200px;
+}
+
 .modal_layer {
   display: none;
   position: fixed;

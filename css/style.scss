@@ -109,7 +109,6 @@ main{
   }
   .about_me_box{
     @include base_design(#dda15e, 100%);
-    // padding: 50px auto;
     .about_me_wrapper{
       width: 70%;
       .about_me_contents{
@@ -174,9 +173,31 @@ main{
   .profile_box{
     @include base_design(#3e5e26, 100%);
     color: ivory;
+    .profile_wrapper{
+      overflow-x: scroll;
+    }
+    .profile_contents{
+      border-bottom: 5px ivory solid;
+      background-color: #3e5e26;
+      display: flex;
+      justify-content: space-evenly;
+      width: 5000px;
+      padding-bottom: 50px;
+      .profile_content{
+        width: 200px;
+        img{
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
+        .profile_discroption{
+          width: 200px;
+        }
+      }
+    }
   }
 }
-
+// works画像クリック時、モーダルウィンドウのスタイル
 .modal_layer{
   display: none;
   position: fixed;
