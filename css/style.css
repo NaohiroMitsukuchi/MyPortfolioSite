@@ -214,11 +214,30 @@ main .profile_box {
   background-color: #3e5e26;
   padding: 20px 0 0;
   color: ivory;
+  position: relative;
 }
 
 main .profile_box h2 {
   width: 100%;
   text-align: center;
+}
+
+main .profile_box #arrow {
+  width: 100x;
+  height: 50px;
+  position: absolute;
+  top: 32.5px;
+  right: 20px;
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 main .profile_box .profile_wrapper {

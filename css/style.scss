@@ -176,9 +176,26 @@ main{
     background-color: #3e5e26;
     padding: 20px 0 0;
     color: ivory;
+    position: relative;
     h2{
       width: 100%;
       text-align: center;
+    }
+    #arrow{
+      width: 100x;
+      height: 50px;
+      position: absolute;
+      top: 32.5px;
+      right: 20px;
+      animation: flash 1s linear infinite;
+    }
+    @keyframes flash {
+      0%, 100%{
+        opacity: 1;
+      }
+      50%{
+        opacity: 0.5;
+      }
     }
     .profile_wrapper{
       overflow-x: scroll;
