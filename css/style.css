@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, .nav_content {
   font-family: "Hannotate SC", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
@@ -62,14 +66,10 @@ header .nav_wrapper ul .nav_content:hover {
 
 header .nav_wrapper ul .nav_content {
   transition: 0.5s;
-}
-
-header .nav_wrapper ul .nav_content a {
   display: inline-block;
   text-decoration: none;
   font-size: 25px;
-  margin: auto 10px;
-  color: inherit;
+  padding: 0 10px;
 }
 
 main {
@@ -467,6 +467,20 @@ main .profile_box .profile_wrapper .age:nth-child(8) {
   to {
     opacity: 1;
   }
+}
+
+.fadeIn {
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
+}
+
+.fadeIn_down {
+  transform: translate(0, 100px);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 footer {
