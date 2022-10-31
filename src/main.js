@@ -127,14 +127,3 @@ document.addEventListener('DOMContentLoaded', function(){
   btnClose.addEventListener('click', modalClose);
   addEventListener('click', outsideClose);
 
-
-
-// profileのアニメーション
-  const fadeInContent =  document.querySelectorAll('.profile_content');
-
-  document.addEventListener('scroll', function(){
-    for(let i = 0; i < fadeInContent.length; i++){
-    }
-  })
-
-

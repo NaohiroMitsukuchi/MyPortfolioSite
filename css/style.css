@@ -469,20 +469,6 @@ main .profile_box .profile_wrapper .age:nth-child(8) {
   }
 }
 
-.fadeIn {
-  transition-duration: 0.5s;
-  transition-property: opacity, transform;
-}
-
-.fadeIn_down {
-  transform: translate(0, 100px);
-}
-
-.scroll-in {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 footer {
   background-color: #0a3300;
   width: 100vw;
