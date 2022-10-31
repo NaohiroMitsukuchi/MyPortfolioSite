@@ -212,38 +212,70 @@ main .profile_box {
   width: 100vw;
   height: 100%;
   background-color: #3e5e26;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0 70px;
+  padding: 20px 0 0;
   color: ivory;
+}
+
+main .profile_box h2 {
+  width: 100%;
+  text-align: center;
 }
 
 main .profile_box .profile_wrapper {
   overflow-x: scroll;
+  height: 100%;
 }
 
-main .profile_box .profile_contents {
-  border-bottom: 5px ivory solid;
+main .profile_box .profile_wrapper .profile_contents {
   background-color: #3e5e26;
   display: flex;
-  justify-content: space-evenly;
   width: 5000px;
-  padding-bottom: 50px;
+  padding: 20px 100px 50px;
 }
 
-main .profile_box .profile_contents .profile_content {
-  width: 200px;
+main .profile_box .profile_wrapper .profile_contents .profile_content {
+  width: 520px;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
 }
 
-main .profile_box .profile_contents .profile_content img {
-  width: 200px;
-  height: 200px;
+main .profile_box .profile_wrapper .profile_contents .profile_content img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+  border: 4px solid ivory;
+  margin-right: 20px;
 }
 
-main .profile_box .profile_contents .profile_content .profile_discroption {
+main .profile_box .profile_wrapper .profile_contents .profile_content .profile_discription_wrapper {
+  width: 250px;
+}
+
+main .profile_box .profile_wrapper .profile_contents .profile_content .profile_discription_wrapper h4 {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+main .profile_box .profile_wrapper .profile_contents .profile_content .profile_discription_wrapper .profile_discroption {
   width: 200px;
+}
+
+main .profile_box .profile_wrapper .age_list {
+  display: flex;
+  width: 5000px;
+  padding: 20px 100px 50px;
+  border-top: 7px ivory solid;
+}
+
+main .profile_box .profile_wrapper .age_list .age {
+  text-align: center;
+  display: block;
+  width: 570px;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .modal_layer {

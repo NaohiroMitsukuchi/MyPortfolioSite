@@ -171,27 +171,60 @@ main{
   }
 
   .profile_box{
-    @include base_design(#3e5e26, 100%);
+    width: 100vw;
+    height: 100%;
+    background-color: #3e5e26;
+    padding: 20px 0 0;
     color: ivory;
+    h2{
+      width: 100%;
+      text-align: center;
+    }
     .profile_wrapper{
       overflow-x: scroll;
-    }
-    .profile_contents{
-      border-bottom: 5px ivory solid;
-      background-color: #3e5e26;
-      display: flex;
-      justify-content: space-evenly;
-      width: 5000px;
-      padding-bottom: 50px;
-      .profile_content{
-        width: 200px;
-        img{
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
+      height: 100%;
+      .profile_contents{
+        background-color: #3e5e26;
+        display: flex;
+        width: 5000px;
+        padding: 20px 100px 50px;
+        .profile_content{
+          width: 520px;
+          display: flex;
+          align-items: center;
+          margin-right: 50px;
+          img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid ivory;
+            margin-right: 20px;
+          }
+          .profile_discription_wrapper{
+            width: 250px;
+            h4{
+              margin-bottom: 5px;
+              font-weight: bold;
+              font-size: 25px;
+            }
+            .profile_discroption{
+              width: 200px;
+            }
+          }
         }
-        .profile_discroption{
-          width: 200px;
+      }
+      .age_list{
+        display: flex;
+        width: 5000px;
+        padding: 20px 100px 50px;
+        border-top: 7px ivory solid;
+        .age{
+          text-align: center;
+          display:  block;
+          width: 570px;
+          display: block;
+          font-size: 25px;
+          font-weight: bold;
         }
       }
     }
