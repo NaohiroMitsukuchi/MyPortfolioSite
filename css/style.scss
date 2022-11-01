@@ -121,7 +121,10 @@ main{
           margin-right: 50px;
         }
         p{
-          width: 50%;
+          #my_name{
+            font-size: 25px;
+          }
+          width: 60%;
         }
       }
     }
@@ -131,6 +134,15 @@ main{
     @include base_design(rgb(254, 215, 167), 100%);
     .works_wrapper{
       width: 767px;
+      h2{
+        margin-bottom: 0px;
+      }
+      > p{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
       .works_contents{
         display: flex;
         justify-content: space-around;
@@ -162,7 +174,11 @@ main{
   .skills_box{
     @include base_design(#d4e6c5, 100%);
     .skills_wrapper{
-      width: 50%;
+      width: 70%;
+      p{
+        width: 80%;
+        margin: 0 auto 20px;
+      }
       img{
         display: block;
         width: 100%;
@@ -174,7 +190,7 @@ main{
     width: 100vw;
     height: 100%;
     background-color: #3e5e26;
-    padding: 20px 0 0;
+    padding: 20px 0 50px;
     color: ivory;
     position: relative;
     h2{
@@ -187,7 +203,7 @@ main{
       position: absolute;
       top: 32.5px;
       right: 20px;
-      animation: flash 1s linear infinite;
+      animation: flash 1.5s linear infinite;
     }
     @keyframes flash {
       0%, 100%{
@@ -278,33 +294,47 @@ main{
           font-weight: bold;
         }
       }
-          .age:nth-child(1){
-            margin-right: 262px;
-          }
-          .age:nth-child(2){
-            margin-right: 396px;
+      .age:nth-child(1){
+        margin-right: 262px;
+      }
+      .age:nth-child(2){
+        margin-right: 396px;
 
-          }
-          .age:nth-child(3){
-            width: 300px;
-            margin-right: 297px;
-          }
-          .age:nth-child(4){
-            margin-right: 327px;
-          }
-          .age:nth-child(5){
-            width: 300px;
-            margin-right: 336px;
-          }
-          .age:nth-child(6){
-            margin-right: 340px;
-          }
-          .age:nth-child(7){
-            margin-right: 419px;
-          }
-          .age:nth-child(8){
-            margin-right: 300px;
-          }
+      }
+      .age:nth-child(3){
+        width: 300px;
+        margin-right: 297px;
+      }
+      .age:nth-child(4){
+        margin-right: 327px;
+      }
+      .age:nth-child(5){
+        width: 300px;
+        margin-right: 336px;
+      }
+      .age:nth-child(6){
+        margin-right: 340px;
+      }
+      .age:nth-child(7){
+        margin-right: 419px;
+      }
+      .age:nth-child(8){
+        margin-right: 300px;
+      }
+    }
+    .profile_detail{
+      margin-top: 20px;
+      width: 100%;
+      h3{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      p{
+        width: 479px;
+        font-size: 18px;
+        margin: 0 auto;
+      }
     }
   }
 }

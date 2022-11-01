@@ -142,7 +142,11 @@ main .about_me_box .about_me_wrapper .about_me_contents #selfile {
 }
 
 main .about_me_box .about_me_wrapper .about_me_contents p {
-  width: 50%;
+  width: 60%;
+}
+
+main .about_me_box .about_me_wrapper .about_me_contents p #my_name {
+  font-size: 25px;
 }
 
 main .works_box {
@@ -157,6 +161,17 @@ main .works_box {
 
 main .works_box .works_wrapper {
   width: 767px;
+}
+
+main .works_box .works_wrapper h2 {
+  margin-bottom: 0px;
+}
+
+main .works_box .works_wrapper > p {
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 main .works_box .works_wrapper .works_contents {
@@ -200,7 +215,12 @@ main .skills_box {
 }
 
 main .skills_box .skills_wrapper {
-  width: 50%;
+  width: 70%;
+}
+
+main .skills_box .skills_wrapper p {
+  width: 80%;
+  margin: 0 auto 20px;
 }
 
 main .skills_box .skills_wrapper img {
@@ -212,7 +232,7 @@ main .profile_box {
   width: 100vw;
   height: 100%;
   background-color: #3e5e26;
-  padding: 20px 0 0;
+  padding: 20px 0 50px;
   color: ivory;
   position: relative;
 }
@@ -228,7 +248,7 @@ main .profile_box #arrow {
   position: absolute;
   top: 32.5px;
   right: 20px;
-  animation: flash 1s linear infinite;
+  animation: flash 1.5s linear infinite;
 }
 
 @keyframes flash {
@@ -353,6 +373,23 @@ main .profile_box .profile_wrapper .age:nth-child(7) {
 
 main .profile_box .profile_wrapper .age:nth-child(8) {
   margin-right: 300px;
+}
+
+main .profile_box .profile_detail {
+  margin-top: 20px;
+  width: 100%;
+}
+
+main .profile_box .profile_detail h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main .profile_box .profile_detail p {
+  width: 479px;
+  font-size: 18px;
+  margin: 0 auto;
 }
 
 .modal_layer {
