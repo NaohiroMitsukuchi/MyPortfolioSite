@@ -387,9 +387,17 @@ main .profile_box .profile_detail h3 {
 }
 
 main .profile_box .profile_detail p {
-  width: 479px;
+  background-color: ivory;
+  width: 590px;
   font-size: 18px;
   margin: 0 auto;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+main .profile_box .profile_detail p em {
+  font-weight: bold;
 }
 
 .modal_layer {

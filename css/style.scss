@@ -331,9 +331,16 @@ main{
         margin-bottom: 20px;
       }
       p{
-        width: 479px;
+        background-color: ivory;
+        width: 590px;
         font-size: 18px;
         margin: 0 auto;
+        color: #111;
+        padding: 10px 20px;
+        border-radius: 10px;
+        em{
+          font-weight: bold;
+        }
       }
     }
   }
