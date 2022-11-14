@@ -542,4 +542,117 @@ footer {
   align-items: center;
   color: ivory;
 }
+
+@media screen and (max-width: 979px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  main .welcome_box .welcome_contents {
+    width: 400px;
+  }
+  main .about_me_box .about_me_wrapper .about_me_contents {
+    display: block;
+  }
+  main .about_me_box .about_me_wrapper .about_me_contents #selfile {
+    margin: 0 auto;
+  }
+  main .about_me_box .about_me_wrapper .about_me_contents p {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+  main .skills_box .skills_wrapper p {
+    width: 100%;
+  }
+  main .profile_box .profile_wrapper .profile_contents .profile_content img {
+    width: 200px;
+    height: 200px;
+  }
+  main .profile_box .profile_wrapper .profile_contents .profile_content h4 {
+    font-size: 22px;
+  }
+  main #arrow {
+    width: 80px;
+    height: 40px;
+  }
+  main .profile_box .profile_detail h3 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .nav_wrapper .logo_area {
+    display: none;
+  }
+  header .nav_wrapper ul {
+    padding: 0;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  header .nav_wrapper ul .nav_content {
+    font-size: 18px;
+  }
+  main .welcome_box .welcome_contents {
+    width: 400px;
+  }
+  main .about_me_box .about_me_wrapper .about_me_contents p {
+    font-size: 15px;
+  }
+  main .skills_box .skills_wrapper p {
+    font-size: 15px;
+  }
+  main .profile_box #arrow {
+    width: 60px;
+    height: 30px;
+  }
+  main .profile_box .profile_wrapper .profile_contents {
+    padding: 5px 100px 15px;
+  }
+  main .profile_box .profile_wrapper .profile_contents .profile_content h4 {
+    font-size: 18px;
+  }
+  main .profile_box .profile_wrapper .profile_contents .profile_content p {
+    font-size: 15px;
+  }
+  main .profile_box .profile_detail p {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  header .nav_wrapper ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  header .nav_wrapper ul .nav_content {
+    font-size: 15px;
+  }
+  main .welcome_box .welcome_contents {
+    width: calc(100% - 20px);
+  }
+  main .about_me_box .about_me_wrapper .about_me_contents p {
+    font-size: 13px;
+  }
+  main .about_me_box .about_me_wrapper .about_me_contents #selfile {
+    width: 250px;
+    height: 250px;
+  }
+  main .skills_box .skills_wrapper p {
+    font-size: 13px;
+  }
+  main .profile_box #arrow {
+    width: 40px;
+    height: 20px;
+    top: 36px;
+  }
+  main .profile_box .profile_detail p {
+    font-size: 13px;
+  }
+  footer h1 {
+    font-size: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -468,3 +468,152 @@ footer{
   align-items: center;
   color: ivory;
 }
+
+@media screen and (max-width: 979px){
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  main{
+    .welcome_box{
+      .welcome_contents{
+        width: 400px;
+      }
+    }
+    .about_me_box{
+      .about_me_wrapper{
+        .about_me_contents{
+          display: block;
+          #selfile{
+            margin: 0 auto;
+          }
+          p{
+            margin: 20px auto 0;
+            width: 100%;
+          }
+        }
+      } 
+    } 
+    .skills_box .skills_wrapper p{
+      width: 100%;
+    }
+    .profile_box .profile_wrapper .profile_contents{
+      .profile_content{
+        img{
+          width: 200px;
+          height: 200px;
+        }
+        h4{
+          font-size: 22px;
+        }
+        
+      } 
+    }
+    #arrow{
+      width: 80px;
+      height: 40px;
+    } 
+    .profile_box .profile_detail{
+      h3{
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  header .nav_wrapper {
+    .logo_area{
+      display: none;
+    }
+    ul{
+      padding: 0;
+      justify-content: space-evenly;
+      width: 100%;
+      .nav_content{
+        font-size: 18px;
+      }
+    }
+  }
+  main{
+    .welcome_box{
+      .welcome_contents{
+        width: 400px;
+      }
+    }
+    .about_me_box .about_me_wrapper .about_me_contents p{
+      font-size: 15px;
+    }
+    .skills_box .skills_wrapper p{
+      font-size: 15px;
+    }
+    .profile_box{
+      #arrow{
+        width: 60px;
+        height: 30px;
+      }
+      .profile_wrapper .profile_contents {
+        padding: 5px 100px 15px;
+        .profile_content{
+          h4{
+            font-size: 18px;
+          }
+          p{
+            font-size: 15px;
+          }
+
+        } 
+      }
+      .profile_detail{
+        p{
+          width: 90%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px){
+  header .nav_wrapper ul{
+    width: 100%;
+    justify-content: space-evenly;
+  .nav_content{
+    font-size: 15px;
+  }
+  }
+  main{
+    .welcome_box{
+      .welcome_contents{
+        width: calc(100% - 20px);
+      }
+    }
+    .about_me_box .about_me_wrapper .about_me_contents{
+      p{
+        font-size: 13px;
+      }
+      #selfile{
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .skills_box .skills_wrapper p{
+      font-size: 13px;
+    }
+    .profile_box{
+      #arrow{
+        width: 40px;
+        height: 20px;
+        top: 36px;
+      }
+      .profile_detail p{
+        font-size: 13px;
+      }
+    }
+  }
+  footer h1{
+    font-size: 30px;
+  }
+}
+
+
