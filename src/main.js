@@ -19,24 +19,23 @@ document.addEventListener('DOMContentLoaded', function(){
     teaoclock: {
       name: "Tea o'clock",
       images_number: 6,
-      discription: "aaahogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      discription: "紅茶は蒸らし時間が変わるだけで風味や渋さが大きく変わります。茶葉の種類や大きさによっても最適な蒸らす時間が異なります。いつも美味しい紅茶を飲むために、紅茶タイマーアプリを作りました。紅茶を登録でき、飲む人数や飲み方、種類(ティーバック/リーフ)などの条件を入力することで必要な湯量や茶葉の量を算出します。タイマー終了時には、紅茶を淹れた条件や飲んだ感想をメモしログとして登録できます。<br><br>下記のアカウントですでにデータが入った物を確認できます<br>e-mail: sample@sample.com<br>passoword: sample2022sample",
       dev_env: "Ruby/ Ruby on Rails / MySQL / Github / AWS",
       production_url: "http://18.176.36.229/",
       github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
     },
-    
     this_site: {
       name: "This Site",
       images_number: 3,
-      discription: "このサイトです。誕生月が11月なので秋らしい色を意識しました。基本的にjQueryを使った実装が多かったため、このサイトでは素のjavascriptを使いました。サイト内のhistoryの項目では、学生時代のことや大学院を中途退学した理由を書きましたので、私の人物像の理解に役立てていただければと思います。",
+      discription: "このサイトです。誕生月が11月なので秋らしい色を意識しました。これまでjQueryを使った実装が多かったため、このサイトでは素のjavascriptを使いました。サイト内のhistoryの項目では、学生時代のことや大学院を中途退学した理由を書きましたので、私の人物像の理解に役立てていただければと思います。",
       dev_env: "HTML/ SCSS / Javascript",
-      production_url: null,
+      production_url: "https://naohiromitsukuchi.github.io/MyPortfolioSite/",
       github_url: "https://github.com/NaohiroMitsukuchi/MyPortfolioSite"
     },
     fleamarket: {
       name: "Flea Market",
       images_number: 4,
-      discription: "スクールで作製したフリマアプリです。",
+      discription: "スクールで作製したフリマアプリです。4人でチームを組んでアジャイル型開発を経験しました。複数人でのアプリ開発が初めてだったので、githubでブランチをmergeする際のconflictの解消や他者のコードをレビューする貴重な経験が得られました。また細かい情報共有の重要性や仲間の進捗を気にしながら開発を行う難しさを学びました。個人的な実装担当箇所としては、DB設計やデプロイ、商品出品機能、ユーザー登録機能、マイページの実装を行いました。(現在アプリ停止中)",
       dev_env: "Ruby/ Ruby on Rails / MySQL / Github / AWS",
       production_url: null,
       github_url: "https://github.com/NaohiroMitsukuchi/fleamarket_sample_78a"

@@ -571,6 +571,28 @@ footer {
     margin: 20px auto 0;
     width: 100%;
   }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content {
+    display: block;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription .link img {
+    width: 40px;
+    height: 40px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription .link .link_message {
+    font-size: 17px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_images_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_images_wrapper .work_images .mini_image {
+    width: 65px;
+    height: 65px;
+  }
   main .profile_box .profile_wrapper .profile_contents .profile_content img {
     width: 200px;
     height: 200px;
@@ -604,6 +626,26 @@ footer {
   }
   main .about_me_box .about_me_wrapper .about_me_contents p {
     font-size: 15px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription .link {
+    margin-bottom: 10px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription .link img {
+    width: 30px;
+    height: 30px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_discription .link .link_message {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  main .works_box .works_wrapper .works_contents .modal_layer .modal_content .work_images_wrapper .work_images .mini_image {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
   }
   main .skills_box .skills_wrapper p {
     font-size: 15px;

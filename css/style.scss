@@ -504,7 +504,41 @@ footer{
           }
         }
       } 
-    } 
+    }
+    .works_box{
+      .works_wrapper{
+        .works_contents{
+          .modal_layer{
+            .modal_content{
+              display: block;
+              .work_discription{
+                width: 90%;
+                margin: 0 auto;
+                .link{
+                  img{
+                    width: 40px;
+                    height: 40px;
+                  }
+                  .link_message{
+                    font-size: 17px;
+                  }
+                }
+              }
+              .work_images_wrapper{
+                width: 90%;
+                margin: 0 auto;
+                .work_images{
+                  .mini_image{
+                    width: 65px;
+                    height: 65px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .profile_box .profile_wrapper .profile_contents{
       .profile_content{
         img{
@@ -550,6 +584,42 @@ footer{
     }
     .about_me_box .about_me_wrapper .about_me_contents p{
       font-size: 15px;
+    }
+    .works_box{
+      .works_wrapper{
+        .works_contents{
+          .modal_layer{
+            .modal_content{
+              .work_discription{
+                p{
+                  font-size: 15px;
+                  margin-bottom: 20px;
+                }
+                .link{
+                  margin-bottom: 10px;
+                  img{
+                    width: 30px;
+                    height: 30px;
+                  }
+                  .link_message{
+                    line-height: 30px;
+                    font-size: 14px;
+                  }
+                }
+              }
+              .work_images_wrapper{
+                .work_images{
+                  .mini_image{
+                    width: 50px;
+                    height: 50px;
+                    margin: 3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
     .skills_box .skills_wrapper p{
       font-size: 15px;
