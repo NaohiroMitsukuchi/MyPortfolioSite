@@ -215,17 +215,25 @@ main .skills_box {
 }
 
 main .skills_box .skills_wrapper {
-  width: 70%;
+  width: 100%;
 }
 
 main .skills_box .skills_wrapper p {
-  width: 80%;
+  width: 70%;
   margin: 0 auto 20px;
 }
 
-main .skills_box .skills_wrapper img {
+main .skills_box .skills_wrapper .skill_images_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+main .skills_box .skills_wrapper .skill_images_wrapper img {
   display: block;
-  width: 100%;
+  height: 300px;
+  margin: 10px 10px;
 }
 
 main .profile_box {
@@ -561,9 +569,6 @@ footer {
   }
   main .about_me_box .about_me_wrapper .about_me_contents p {
     margin: 20px auto 0;
-    width: 100%;
-  }
-  main .skills_box .skills_wrapper p {
     width: 100%;
   }
   main .profile_box .profile_wrapper .profile_contents .profile_content img {

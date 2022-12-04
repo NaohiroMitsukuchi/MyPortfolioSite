@@ -18,28 +18,28 @@ document.addEventListener('DOMContentLoaded', function(){
   const worksArray = {
     teaoclock: {
       name: "Tea o'clock",
-      images_number: 5,
+      images_number: 6,
       discription: "aaahogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
-      dev_env: "ruby Rails",
+      dev_env: "Ruby/ Ruby on Rails / MySQL / Github / AWS",
       production_url: "http://18.176.36.229/",
       github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
     },
     
-    teaoclocker: {
-      name: "Tea o'clocker",
-      images_number: 5,
-      discription: "111hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
-      dev_env: "ruby Rails",
+    this_site: {
+      name: "This Site",
+      images_number: 3,
+      discription: "このサイトです。誕生月が11月なので秋らしい色を意識しました。基本的にjQueryを使った実装が多かったため、このサイトでは素のjavascriptを使いました。サイト内のhistoryの項目では、学生時代のことや大学院を中途退学した理由を書きましたので、私の人物像の理解に役立てていただければと思います。",
+      dev_env: "HTML/ SCSS / Javascript",
       production_url: null,
-      github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
+      github_url: "https://github.com/NaohiroMitsukuchi/MyPortfolioSite"
     },
-    teaoclockist: {
-      name: "Tea o'clockist",
-      images_number: 5,
-      discription: "222hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
-      dev_env: "ruby Rails",
+    fleamarket: {
+      name: "Flea Market",
+      images_number: 4,
+      discription: "スクールで作製したフリマアプリです。",
+      dev_env: "Ruby/ Ruby on Rails / MySQL / Github / AWS",
       production_url: null,
-      github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
+      github_url: "https://github.com/NaohiroMitsukuchi/fleamarket_sample_78a"
     }
   }
 
@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function(){
         modalOpen();
       })
     }
+
   })
 
   // モーダルウィンドウ閉じた際にモーダル内の要素を削除する関数

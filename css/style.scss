@@ -174,14 +174,23 @@ main{
   .skills_box{
     @include base_design(#d4e6c5, 100%);
     .skills_wrapper{
-      width: 70%;
+      width: 100%;
       p{
-        width: 80%;
+        width: 70%;
         margin: 0 auto 20px;
       }
-      img{
-        display: block;
-        width: 100%;
+      .skill_images_wrapper{
+        // background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        // width: 80%;
+        img{
+          display: block;
+          height: 300px;
+          margin: 10px 10px;
+        }
       }
     }
   }
@@ -496,9 +505,6 @@ footer{
         }
       } 
     } 
-    .skills_box .skills_wrapper p{
-      width: 100%;
-    }
     .profile_box .profile_wrapper .profile_contents{
       .profile_content{
         img{
