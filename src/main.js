@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     teaoclock: {
       name: "Tea o'clock",
       images_number: 6,
-      discription: "紅茶は蒸らし時間が変わるだけで風味や渋さが大きく変わります。茶葉の種類や大きさによっても最適な蒸らす時間が異なります。いつも美味しい紅茶を飲むために、紅茶タイマーアプリを作りました。紅茶を登録でき、飲む人数や飲み方、種類(ティーバック/リーフ)などの条件を入力することで必要な湯量や茶葉の量を算出します。タイマー終了時には、紅茶を淹れた条件や飲んだ感想をメモしログとして登録できます。<br><br>下記のアカウントですでにデータが入った物を確認できます<br>e-mail: sample@sample.com<br>passoword: sample2022sample",
+      discription: "紅茶は蒸らし時間が変わるだけで風味や渋さが大きく変わります。茶葉の種類や大きさによっても最適な蒸らす時間が異なります。いつも美味しい紅茶を飲むために、紅茶タイマーアプリを作りました。紅茶を登録でき、飲む人数や飲み方、種類(ティーバック/リーフ)などの条件を入力することで必要な湯量や茶葉の量を算出します。タイマー終了時には、紅茶を淹れた条件や飲んだ感想をメモしログとして登録できます。<br><br>下記のアカウントですでにデータが入った物を確認できます<br>e-mail: sample@sample.com<br>password: sample2022sample",
       dev_env: "Ruby/ Ruby on Rails / MySQL / Github / AWS",
       production_url: "http://18.176.36.229/",
       github_url: "https://github.com/NaohiroMitsukuchi/teaoclock"
